@@ -1,0 +1,10 @@
+-- Alternative: Create admin via SQL (if you prefer not to use the auto-loader)
+-- You must generate a BCrypt hash for your password. Use this Java snippet:
+--
+--   String hash = new BCryptPasswordEncoder().encode("Admin@123");
+--   System.out.println(hash);
+--
+-- Then run:
+-- INSERT INTO users (name, email, password, phone, role, created_at)
+-- VALUES ('Admin', 'admin@jansamadhan.ai', '<YOUR_BCRYPT_HASH>', NULL, 'ADMIN', NOW())
+-- ON DUPLICATE KEY UPDATE id=id;

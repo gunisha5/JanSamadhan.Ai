@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-slate-900 antialiased;
+}
+
+.gov-shell {
+  @apply min-h-screen flex flex-col bg-gradient-to-b from-gov-accentSoft via-slate-50 to-gov-muted;
+}
+
+.gov-header {
+  @apply border-b border-slate-200 bg-white/90 backdrop-blur shadow-sm;
+}
+
+.gov-brand-bar {
+  @apply text-sm bg-gradient-to-r from-gov-saffron via-gov-white to-gov-green text-gov-navy;
+}
+
+.gov-page {
+  @apply flex-1 flex;
+}
+
+.gov-main {
+  @apply max-w-6xl mx-auto w-full px-4 py-8 lg:py-10;
+}
+
